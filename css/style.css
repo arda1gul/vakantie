@@ -7,15 +7,27 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 100px);
+    grid-template-rows: 100px 200px 200px 200px 100px;
 }
 
 .title {
-    grid-column: 2 / 12;
+    grid-column: 1 / 12;
     grid-row: 2;
     font-size: 60px;
     font-weight: lighter;
+    text-align: center;
 }
 
-.getal {
+.number {
     font-weight: 400;
+}
+
+.main {
+    grid-row: 3;
+    grid-column: 1 / 12;
+    text-align: center;
+}
+
+.max-number {
+    border: 1px solid black;
 }
